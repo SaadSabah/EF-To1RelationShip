@@ -13,7 +13,7 @@ namespace EF_To1RelationShip
             optionsBuilder.UseSqlServer(connectionString);
         }
 
-        protected override void OnModelCreating(ModelBuilder ModelBuilder)
+        protected override void OnModelCreating(ModelBuilder ModelBuilder) //
         {
             ModelBuilder.Entity<Car>().HasData(new Car { Id = 1, Brand = "Toyota", Model = "Auris", Year = 2020 });
             ModelBuilder.Entity<Car>().HasData(new Car { Id = 2, Brand = "Volvo", Model = "V40", Year = 2022 });
